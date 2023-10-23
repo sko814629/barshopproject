@@ -1,0 +1,614 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Kaushan ', cursive;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Poppins', sans-serif;
+}
+
+   #banner{
+    background:linear-gradient( rgba(0,0,0,0.5), #009688),url("/Barber_Shop_img/banner.jpg");
+   
+    background-size: cover;
+    background-position: center;
+
+}
+.logo{
+    position: absolute;
+    left:100px;
+    top:50px;
+    width: 140px;
+}
+.banner-text{
+    text-align: center;
+    padding-top: 130px;
+}
+.banner-text h1{
+    font-size: 130px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+.banner-text p{
+    font-size: 20px;
+    color: #fff;
+    font-style: italic;
+}
+.banner-btn{
+    margin: 70px auto ;
+    display: inline-block;
+}
+.banner-btn a {
+    width: 150px;
+    text-decoration: none;
+    display:inline-block;
+    border: 1px solid #fff;
+    padding: 12px 0;
+    margin: 0 10px;
+    position: relative;
+    z-index: 1;
+    color: black;
+}
+.banner-btn a span::after{
+    content: "";
+    position: absolute;
+    left:0;
+    top: 0;
+    
+    width: 1%;
+    height: 100%;
+    background-color: #009688;
+    color: black;
+    z-index: -1;
+    transition: 0.5s;
+
+    
+    
+}
+.banner-btn a:hover span::after{
+    width: 100%;
+    
+
+}
+.banner-btn a:hover {
+    color: white;
+
+}
+#sidenav{
+    width: 250px;
+    height: 100vh;
+    background-color: #009988;
+    position: fixed;
+    right: 0;
+    top:0;
+    z-index: 2;
+}
+
+
+nav ul li{
+    list-style: none;
+    margin: 50px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color:#fff;
+}
+#menu-btn{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background-color: #009988;
+    position: fixed;
+    right: 30px;
+    border-radius: 3px;
+    z-index: 3;
+    top: 20px;
+   
+
+}
+#menu-btn img{
+    
+width: 20px;
+margin-top: 15px;
+}
+
+#feature{
+   width: 100%;
+    padding: 70px 0;
+}
+.title-text{
+    text-align: center;
+    padding-bottom: 70px;
+}
+.title-text p{
+    font-size: 20px;
+    color: #009988;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+.title-text p::after{
+    width: 50px;
+    height: 35px;
+    content: "";
+    position: absolute;
+    left: 0;
+    top:-18px;
+    background: linear-gradient(#019587,#fff);
+    z-index: -1;
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+
+}
+.title-text h1{
+    font-size: 50px;
+}
+.feature-boxs{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+.features {
+   flex-basis: 50%;
+
+}
+.features h1{
+    text-align: left;
+    font-weight: 100;
+    margin-bottom: 10px;
+    color: #009988;
+}
+.features-img {
+    flex-basis: 50%;
+    margin:auto;
+    
+}
+.features-img img{
+    width: 70%;
+
+}
+.feature-desc{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.feature-icon i{
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    /* display: flex;
+    justify-content:center;
+    align-items: center;  */
+    line-height: 50px;
+    border-radius: 8px;
+    color: #009688;
+    border: 1px solid #009688;
+}
+.feature-text p{
+    padding: 0 20px;
+}
+
+
+ /* serives */
+ #serives{
+    width: 100%;
+     padding: 70px 0;
+     background-color: #efefef;
+ }
+ .serives-text{
+     text-align: center;
+     padding-bottom: 70px;
+ }
+ .serives-text p{
+    font-size: 20px;
+    color: #009988;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+.serives-text p::after{
+    width: 50px;
+    height: 35px;
+    content: "";
+    position: absolute;
+    left: 0;
+    top:-18px;
+    background: linear-gradient(#019587,#fff);
+    z-index: -1;
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+
+}
+.serives-text h1{
+    font-size: 50px;
+}
+.serives-boxs{
+    width: 80%;
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    margin: auto;
+   
+}
+.serives-box {
+    display: flex;
+    flex-basis: 48%;
+    align-items: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    color: #fff;
+    position: relative;
+   
+   
+}
+.serives-box img{
+    width: 100%;
+
+}
+.over-effect{
+   
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    border-radius: 7px;
+    top:0;
+    cursor: pointer;
+   opacity: -1;
+    background:linear-gradient(rgba(0,0,0,0.5),#009688);
+    transition: 0.5s;
+}
+.serives-box:hover .over-effect{
+    width: 100%;
+    opacity: 1;
+    transition: 0.5s;
+
+}
+.serives-descr{
+    text-align: center;
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform:translateX(-50%);
+    transition: 0.2s;
+    opacity: 0;
+}
+hr{
+    background: #fff;
+    height: 2px;
+    margin: 15px auto;
+    width: 60%;
+}
+.serives-descr p{
+    font-size: 14px;
+}
+.serives-box:hover .serives-descr {
+    bottom: 40%;
+    opacity: 1;
+    transition: 0.2s;
+
+}
+@media screen and (max-width:650px){
+    .serives-box {
+        flex-basis: 100%;
+    }
+    .serives-text h1{
+        font-size: 35px;
+    }
+
+}
+
+ /*    testmontil */
+
+#testmontil{
+    width: 80%;
+    padding: 70px 0;
+    /* background-color: #efefef; */
+    margin: auto;
+   
+
+}
+.testmontil-text{
+    text-align: center;
+    padding-bottom: 70px;
+}
+.testmontil-text p{
+    font-size: 20px;
+    color: #009988;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+.testmontil p::after{
+    width: 50px;
+    height: 35px;
+    content: "";
+    position: absolute;
+    left: 0;
+    top:-18px;
+    background: linear-gradient(#019587,#fff);
+    z-index: -1;
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+
+}
+.testmontil-text h1{
+    font-size: 50px;
+}
+.testmontil-boxs{
+  
+    display: flex;
+    justify-content:space-evenly;
+    margin: 15px;
+   
+}
+
+.testmontil-img img{
+    width: 40px;
+    height: 40px;
+}
+
+
+
+.testmontil-box1{
+    flex-basis: 28%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    transition: 0.5s;
+    border: 1px solid transparent;
+    background-color: #efefef;
+
+}
+.testmontil-box2{
+    flex-basis: 28%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    transition: 0.5s;
+    border: 1px solid transparent;
+    background-color: #efefef;
+
+}
+.testmontil-box3{
+    flex-basis: 28%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    transition: 0.5s;
+    border: 1px solid transparent;
+    background-color: #efefef;
+
+}
+
+.testmontil-box1:hover{
+    transform: translateY(7px);
+    transition: 0.5s;
+}
+.testmontil-box2:hover{
+    transform: translateY(7px);
+    transition: 0.5s;
+}
+.testmontil-box3:hover{
+    transform: translateY(7px);
+    transition: 0.5s;
+}
+.testmontil-heading{
+    display: flex;
+}
+.testmontil-h{
+    display: block;
+    
+}
+.testmontil-h h4{
+    padding: 0 10px;
+}
+.testmontil-h > a{
+    margin-left: 10px;
+}
+.testmontil-h > a >i{
+    color: #0099fe;
+}
+.testmontil-gmail > a{
+    text-decoration: none;
+}
+.testmontil-par p{
+    margin-top: 10px;
+}
+
+    /* footer */
+
+#footer{
+    
+    width: 100%;
+    padding: 70px 0;
+    background-color: #cebebe;
+   margin: autof;
+
+}
+.footer-text{
+    text-align: center;
+    padding-bottom: 70px;
+}
+.footer-text p{
+    font-size: 20px;
+    color: #009988;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+.footer p::after{
+    width: 50px;
+    height: 35px;
+    content: "";
+    position: absolute;
+    left: 0;
+    top:-18px;
+    background: linear-gradient(#019587,#fff);
+    z-index: -1;
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+
+}
+.footer-text h1{
+    font-size: 50px;
+}
+.footer-mid{
+    width: 80%;
+    display: flex;
+    justify-content:space-between;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+.footer-time > ul > li{
+    list-style: none;
+}
+.footer-time > ul > li > a{
+    text-decoration: none;
+    color: black;
+}
+.footer-time > ul > li > a > i{
+    margin-right: 10px;
+    color: #009688;
+}
+
+.footer-time{
+    padding: 10px;
+}
+.footer-Contact > ul > li{
+    list-style: none;
+
+}
+.footer-Contact> ul > li > a{
+    text-decoration: none;
+    color: black;
+}
+.footer-Contact > ul > li > a > i{
+    margin-left: 10px;
+    color: #009688;
+}
+.botoom{
+    margin-top: 20px;
+    
+}
+.botoom > ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botoom > ul > li{
+    list-style: none;
+    margin: 8px;
+    transition: 0.5s;
+    
+}
+.botoom > ul > li > a{
+    text-decoration: none;
+    color: #009688;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-color:white;
+    border-radius: 2px;
+} 
+.botoom > ul > li > a > i{
+    color:#009988;
+   
+}
+.botoom > ul > li:hover  > a  {
+    background-color:#009988 ;
+    transform: translateY(-7px);
+    transition: 0.5s;
+    
+   
+}
+.botoom > ul > li:hover  > a > i  {
+    color: white;
+    
+   
+}
+
+
+
+@media screen and (max-width:650px){
+    .title-text h1{
+        font-size: 35px;
+    }
+    .features {
+        flex-basis: 100%;
+     
+     }
+     .features-img {
+        flex-basis: 100%;
+        
+        
+    }
+    .features-img img{
+        width: 100%;
+    
+    }
+    .footer-text h1{
+        font-size: 35px;
+    }
+    
+        
+    
+
+
+
+}
+@media screen and (max-width:650px){
+    .banner-text h1{
+        font-size: 30px;
+        
+    }
+    .banner-btn a{
+        display: block;
+        margin: 20px auto;
+    }
+    testmontil-img-heading{
+        flex-basis: 100%;
+        
+    }
+    
+    .testmontil-text h1{
+        font-size: 35px;
+    }
+
+    .testmontil-img-heading{
+        flex-basis: 100%;
+        
+    }
+    
+    .testmontil-text h1{
+        font-size: 35px;
+    }
+    
+    .testmontil-boxs{
+        display: block  ;
+        width: 100%;
+        margin: auto;
+    }
+
+}
